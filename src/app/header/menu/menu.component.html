@@ -1,0 +1,27 @@
+<div class="menu vw-100 vh-100 secundary-gb-color position-absolute menu-hidden"
+    [ngClass]="{'menu-opened' : isOpened}">
+
+    <div class="container">
+        <div class="d-flex mb-5 pt-2 justify-content-between">
+            <a class="logo btn fs-1dot5 p-1 me-3" href="/">My-IMDb </a>
+            <button class="btn  rounded-circle primary-bg-color px-3" (click)="closeMenu()">
+             <fa-icon [icon]="faXmark"></fa-icon>
+            </button>
+        </div>
+        <div class="d-flex">
+            <div class="row row-cols-3 menu-bottom">
+                <app-links 
+                *ngFor="let item of items" 
+                 [icon]="item.icon" 
+                 [title]="item.title"
+                 [items]="item.subItems"
+                 class="fs-7"
+                ></app-links>
+            </div>
+        </div>
+        
+       
+    </div>
+   
+    
+</div>

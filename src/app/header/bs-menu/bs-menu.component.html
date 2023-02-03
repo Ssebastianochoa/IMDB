@@ -1,0 +1,40 @@
+<div 
+    class="modal fade" 
+    id="menuModal"
+    data-bs-backdrop="static" 
+    data-bs-keyboard="false" 
+    tabindex="-1" 
+    aria-labelledby="staticBackdropLabel" 
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-fullscreen ">
+        <div class="modal-content secundary-gb-color">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="d-flex mb-5 pt-2 justify-content-between">
+                        <a class="logo btn fs-1dot5 p-1 me-3" href="/">My-IMDb </a>
+                        <button 
+                            class="btn  rounded-circle primary-bg-color px-3" 
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+
+                         <fa-icon [icon]="faXmark"></fa-icon>
+                        </button>
+                    </div>
+                    <div class="d-flex">
+                        <div class="row row-cols-3 menu-bottom">
+                            <app-links 
+                            *ngFor="let item of items" 
+                             [icon]="item.icon" 
+                             [title]="item.title"
+                             [items]="item.subItems"
+                             class="fs-7"
+                            ></app-links>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
