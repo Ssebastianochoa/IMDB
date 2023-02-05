@@ -1,0 +1,28 @@
+<div class="cards-container-all cards-container-body main-bg-color " *ngFor="let movie of movies">
+  <div class="card-container secondary-bg-color me-4 cards-conatiner-card">
+    <div class="card-image">
+      <img class="card-image_img image" src={{movie.imagen}} alt="">
+    </div>
+    <div class="ms-2 mt-2"> 
+      <div class="card-calification d-flex">
+        <fa-icon class="primary-color-text me-1" [icon]="movie.icon"></fa-icon>
+        <div class="text-calification">{{movie.calification}}</div>
+        <div><fa-icon class="text-light ms-4 " [icon]="faStar"></fa-icon></div>
+      </div>
+      <div class="title-card-container">
+        <a class="card-title" href="">
+          <h5 class="text-title-light title-hover">{{movie.title}}</h5>
+        </a>
+      </div>
+      <div class="card-footer mt-4">
+        <a class="card-view-now" href="">
+          <button class="button-seguimiento mb-3"><fa-icon [icon]="faPlus"></fa-icon> Lista de seguimiento</button>
+        </a>
+        <div class="card-trailer d-flex justify-content-center">
+          <button class="button-trailer secondary-bg-color button-hover-trailer"><fa-icon class="me-2" [icon]="faPlay"></fa-icon>Trailer</button>
+          <div><fa-icon class="text-light ms-5" [icon]="faCircleExclamation"></fa-icon></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

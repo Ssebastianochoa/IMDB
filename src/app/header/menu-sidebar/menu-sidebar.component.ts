@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-sidebar',
@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-sidebar.component.css']
 })
 export class MenuSidebarComponent {
-
 }

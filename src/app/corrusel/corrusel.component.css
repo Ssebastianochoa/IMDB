@@ -1,0 +1,88 @@
+.corrusel-container-body {
+    width: 80%;
+    margin: auto;
+    overscroll-behavior-x:contain; 
+}
+.carrusel-all {
+    overscroll-behavior-x:contain; 
+
+}
+.what-view{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.selection-popular {
+    font-weight: bold;
+    color:var(--text-light);
+    text-decoration: none;
+}
+.program-film {
+    font-weight: bold;
+    color:var(--trithy-color);
+}
+.icon-hover:hover {
+    color: var(--primary-color);
+}
+.title-hover:hover {
+    color: var(--text-light);
+}
+.text-color-blue {
+    color: var(--text-trithy-blue);
+}
+.popular-hover {
+    color: var(--text-light)
+}
+.carousel-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px #dce1e1;
+}
+
+
+
+
+
+
+.cards-container-body {
+    width: 80%;
+}
+.cards-conatiner-card {
+    height: 520px;
+}
+.title-card-container {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+}
+.image {
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+}
+.text-calification{
+    color: var( --text-secubdary-gray);
+}
+.text-title-light{
+    color: var(--text-light);
+}
+.title-hover:hover {
+    text-decoration: underline;
+}
+.button-trailer {
+   color: var(--text-light);
+   border: none;
+}
+.button-seguimiento{
+    height: 40px;
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-trithy-blue);
+    margin: auto;
+}
+.button-hover-trailer:hover {
+    background-color: var(--trithy-color);
+}

@@ -1,0 +1,56 @@
+[
+   {
+    "image": "imagen1",
+    "icon": "star",
+    "calification":6.9,
+    "title": "Tendencias",
+    "subItems": [
+       {    
+        "path": "/",
+        "text": "Lista de seguimiento"
+       },
+       {    
+        "path": "/",
+        "icon": "star",
+        "text": "Trailer"
+       
+       }
+    ]
+   },
+   {
+    "image":"imagen2",
+    "icon": "star",
+    "calification":6.5,
+    "title": "Tendencias",
+    "subItems": [
+       {    
+        "path": "/",
+        "text": "Lista de seguimiento"
+       },
+       {    
+        "path": "/",
+        "icon": "",
+        "text": "Trailer"
+        
+       }
+    ]
+   },
+   {
+    "image":"imagen2",
+    "icon": "star",
+    "calification":6.5,
+    "title": "Tendencias",
+    "subItems": [
+       {    
+        "path": "/",
+        "text": "Lista de seguimiento"
+       },
+       {    
+        "path": "/",
+        "icon": "",
+        "text": "Trailer"
+        
+       }
+    ]
+   }
+]

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { faArrowTurnUp, faFilm, faTv, faPhotoFilm, faUserGroup, faStar, faEarthEurope, faXmark} from '@fortawesome/free-solid-svg-icons';
-import { Item } from './item';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-menu',
@@ -14,7 +14,7 @@ export class MenuComponent {
   faXmark = faXmark;
   items: Item[] = [
     {
-      icon: faArrowTurnUp,
+      icon: 'arrow-turn-up',
       title: 'Tendencias',
       subItems: [
         {
@@ -45,7 +45,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faTv,
+      icon: 'tv',
       title: 'Series',
       subItems: [
         {
@@ -67,7 +67,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faStar,
+      icon: 'star',
       title: 'Premios y Eventos',
       subItems: [
         {
@@ -117,7 +117,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faFilm,
+      icon: 'film',
       title: 'Peliculas',
       subItems: [
         {
@@ -147,7 +147,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faPhotoFilm,
+      icon: 'photo-film',
       title: 'Ver',
       subItems: [
         {
@@ -174,7 +174,7 @@ export class MenuComponent {
     },
    
     {
-      icon: faEarthEurope,
+      icon: 'earth-europe',
       title: 'Comunidad',
       subItems: [
         {
@@ -192,7 +192,7 @@ export class MenuComponent {
     },
     
     {
-      icon: faUserGroup,
+      icon: 'user-group',
       title: 'Celebrities',
       subItems: [
         {

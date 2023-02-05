@@ -1,20 +1,37 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-
+import { environment } from 'src/environments/environment.development';
+import { Item } from './item';
+import { MenuService } from './menu.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
   faBars = faBars;
-  // isMenuOpened = false;
+
+  constructor(private menuService: MenuService, private http: HttpClient ) {
+    
+  }
+
+  ngOnInit(): void {
+
+    this.http
+    .get<Item[]>(`${environment.apiUrl}/menuItems`)
+    .subscribe((data) => {
+      this.menuService.menuItemsBehaviorSubject.next(data);
+      console.log(data);
+    });
+
+  };
+
+    // isMenuOpened = false;
 
   // toggleMenu(){
   //   this.isMenuOpened = !this.isMenuOpened;
   // }
 
- 
 }
